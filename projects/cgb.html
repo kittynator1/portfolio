@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/carousel.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.png" alt="Kittynator" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kittynator">Kittynator</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="" class="contact-link">Champion Régional<br>WorldSkills</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">22 Décembre 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <a href="../index.html">
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active">Back</button>
+          </li>
+
+        </ul>
+
+      </nav>
+    </a>
+    
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="cgb  active" data-page="cgb">
+
+        <header>
+          <h2 class="h2 article-title">CGB – Projet scolaire</h2>
+        </header>
+        
+        <section class="about-text">
+
+            <section>
+                <!-- <span id="txt">Carousel by Ashirbad Panigrahi</span> -->
+                <div class="carousel" data-carousel>
+                  <ul data-carousel-slides>
+    
+                    <li class="slide" data-carousel-slide data-active>
+                      <img
+                        src="../assets/images/cgb/cgb.png"
+                        alt="image-1"
+                      />
+    
+                    </li>
+    
+                  </ul>
+                </div>
+            </section>
+            
+    
+            <header>
+                <h2 class="h2 article-title"></h2>
+            </header>
+            
+
+            <p>
+                Dans le cadre de ma deuxième année de BTS SIO, 
+                j’ai participé au développement d’une <code style="font-weight: 900;">API 
+                REST</code> de gestion des virements bancaires pour la banque
+                fictive <code style="font-weight: 900;">Credit Général Bank (CGB)</code>.
+            </p>
+
+            <p>
+                La mission s’inscrit dans le cadre du développement 
+                d’une <code style="font-weight: 900;">API REST</code> sécurisée pour une plateforme bancaire 
+                interne destinée à la gestion des virements bancaires. 
+                Cette <code style="font-weight: 900;">API</code> permet <code style="font-weight: 900;">d’initier et de gérer des virements 
+                simples ou en lots</code>, de <code style="font-weight: 900;">valider les IBANs conformément</code> 
+                aux normes européennes, d’assurer <code style="font-weight: 900;">l’authentification et 
+                l’autorisation des utilisateurs via JWT</code>, ainsi que 
+                <code style="font-weight: 900;">d’automatiser la génération de rapports de virements 
+                et de notifications</code> à destination des clients et gestionnaires bancaires.
+            </p>
+
+            <p>
+                Ce projet a pour but de moderniser les processus 
+                existants, souvent manuels ou répartis entre plusieurs 
+                outils disparates. Il répond à des enjeux de <code style="font-weight: 900;">fiabilité</code>, 
+                de <code style="font-weight: 900;">traçabilité</code> et de <code style="font-weight: 900;">sécurité</code> 
+                dans le traitement des flux financiers.
+            </p>
+
+            <p>
+                Le développement s’inscrit dans une architecture 
+                respectant le <code style="font-weight: 900;">pattern MVC</code>, utilisant <code style="font-weight: 900;">Java 17</code>, 
+                <code style="font-weight: 900;">Spring Boot</code>, 
+                <code style="font-weight: 900;">Spring Security</code>, <code style="font-weight: 900;">JWT</code>,  
+                <code style="font-weight: 900;">Hibernate</code>, <code style="font-weight: 900;">JPA</code>, et 
+                <code style="font-weight: 900;">H2</code>. L’API respecte les principes <code style="font-weight: 900;">RESTful</code>, 
+                avec des <code style="font-weight: 900;">endpoints sécurisés et documentés</code> via Swagger/OpenAPI.
+            </p>
+
+            <p>
+                Ce contexte implique une forte rigueur en matière de <code style="font-weight: 900;">normalisation</code>, 
+                de <code style="font-weight: 900;">gestion des erreurs</code>, de <code style="font-weight: 900;">logging</code>, 
+                et de <code style="font-weight: 900;">tests (unitaires et d’intégration)</code>, 
+                car les opérations bancaires sont <code style="font-weight: 900;">sensibles et soumises à des exigences 
+                réglementaires strictes</code>.
+            </p>
+          
+        </section>
+        
+        
+
+        <section class="service">
+
+          <h4 class="h4 service-title">Technologies utilisées :</h3>
+
+          <ul class="service-list-technologies">
+
+            <li class="service-item">
+              <div class="service-icon-box" title="Java">
+                <img src="../assets/images/technologies/java-icon.svg" alt="Java icon" width="40">
+              </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="springio">
+                  <img src="../assets/images/technologies/springio-icon.svg" alt="springio icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box" title="Hibernate">
+                <img src="../assets/images/technologies/hibernate-icon.svg" alt="Hibernate icon" width="40">
+              </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Git">
+                  <img src="../assets/images/technologies/git-icon.svg" alt="Git icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Github">
+                  <img src="../assets/images/technologies/github-icon.svg" alt="Github icon" width="40">
+                </div>
+            </li>
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/carousel.js"></script>
+  
+
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

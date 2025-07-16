@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/carousel.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.png" alt="Kittynator" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kittynator">Kittynator</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="" class="contact-link">Champion Régional<br>WorldSkills</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">22 Décembre 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <a href="../index.html">
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active">Back</button>
+          </li>
+
+        </ul>
+
+      </nav>
+    </a>
+    
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="ransomware  active" data-page="ransomware">
+
+        <header>
+          <h2 class="h2 article-title">Ransomware – Projet personnel</h2>
+        </header>
+        
+        <section class="about-text">
+
+            <section>
+                <!-- <span id="txt">Carousel by Ashirbad Panigrahi</span> -->
+                <div class="carousel" data-carousel>
+                  <button class="carousel-button" data-carousel-btn="prev">
+                    &#10094;
+                  </button>
+                  <button class="carousel-button" data-carousel-btn="next">
+                    &#10095;
+                  </button>
+                  <ul data-carousel-slides>
+    
+                    <li class="slide" data-carousel-slide data-active>
+                      <img
+                        src="../assets/images/ransomware/ransomware.png"
+                        alt="image-1"
+                      />
+    
+                    </li>
+    
+                    <li class="slide" data-carousel-slide>
+                      <img
+                      src="../assets/images/ransomware/corrupted_file.png"
+                        alt="image-2"
+                      />
+                    </li>
+    
+                  </ul>
+                  <ul data-carousel-dots>
+                    <li data-carousel-dot data-active></li>
+                    <li data-carousel-dot></li>
+                  </ul>
+                </div>
+            </section>
+            
+    
+            <header>
+                <h2 class="h2 article-title"></h2>
+            </header>
+            
+
+            <p>
+                Ayant toujours été passionné par le fonctionnement des <code style="font-weight: 900;">virus</code>, 
+                j’ai décidé de me documenter afin de créer moi-même un <code style="font-weight: 900;">ransomware</code>. 
+                Dans un premier temps, j’ai tenté de chiffrer manuellement les fichiers, avant d’opter pour <code style="font-weight: 900;">Fernet</code>, 
+                une solution de chiffrement symétrique plus sécurisée. Pour rendre l’interaction plus intuitive, j’ai utilisé <code style="font-weight: 900;">Tkinter</code> afin 
+                d’afficher une interface demandant une <code style="font-weight: 900;">clé de déchiffrement</code>.
+            </p>
+
+            <p>
+                L’objectif de ce projet était d’explorer les <code style="font-weight: 900;">mécanismes de chiffrement</code> des données et de comprendre le fonctionnement des attaques par ransomware,
+                tout en respectant un cadre éthique et pédagogique.
+            </p>
+
+            <p>
+                Le programme chiffre tout les fichiers de l'ordinateur cible à l’aide d'appel <code style="font-weight: 900;">récursif</code> 
+                de l’algorithme de <code style="font-weight: 900;">chiffrement symétrique</code> de la bibliothèque <code style="font-weight: 900;">cryptography (Fernet)</code>. 
+                Une fois les fichiers chiffrés, une interface graphique s’affiche pour informer l’utilisateur que ses fichiers ont été verrouillés. 
+                Un champ permet d’entrer une <code style="font-weight: 900;">clé de déchiffrement</code>, permettant ainsi de récupérer les fichiers si la clé correcte est fournie.
+            </p>
+          
+        </section>
+        
+        
+
+        <section class="service">
+
+          <h4 class="h4 service-title">Technologies utilisées :</h3>
+
+          <ul class="service-list-technologies">
+
+            <li class="service-item">
+              <div class="service-icon-box" title="Python">
+                <img src="../assets/images/technologies/python-icon.svg" alt="Python icon" width="40">
+              </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Tkinter">
+                  <img src="../assets/images/technologies/tkinter-icon.svg" alt="Tkinter icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box" title="Visual Studio Code">
+                <img src="../assets/images/technologies/visualstudio_code-icon.svg" alt="Visual Studio Code icon" width="40">
+              </div>
+            </li>
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/carousel.js"></script>
+  
+
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/carousel.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.png" alt="Kittynator" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kittynator">Kittynator</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="" class="contact-link">Champion Régional<br>WorldSkills</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">22 Décembre 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <a href="../index.html">
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active">Back</button>
+          </li>
+
+        </ul>
+
+      </nav>
+    </a>
+    
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="alcineo  active" data-page="alcineo">
+
+        <header>
+          <h2 class="h2 article-title">SoftPoS Alcineo – Projet professionnel</h2>
+        </header>
+        
+        <section class="about-text">
+
+            <section>
+                <!-- <span id="txt">Carousel by Ashirbad Panigrahi</span> -->
+                <div class="carousel" data-carousel>
+                  <ul data-carousel-slides>
+    
+                    <li class="slide" data-carousel-slide data-active>
+                        <video controls>
+                            <source src="../assets/images/alcineo/ProjetSoftPoSAlcineo.mp4" type="video/mp4" />
+                        </video>
+                    </li>
+    
+                  </ul>
+                </div>
+            </section>
+            
+    
+            <header>
+                <h2 class="h2 article-title"></h2>
+            </header>
+            
+
+            <p>
+                Lors de mon stage de première année de <code style="font-weight: 900;">BTS SIO option SLAM</code>, 
+                j’ai eu l’opportunité d’intégrer l’entreprise <code style="font-weight: 900;">Alcinéo</code>, spécialisée 
+                dans les <code style="font-weight: 900;">solutions de paiement électronique sécurisées</code>. Mon rôle principal 
+                a été de participer au développement d’une <code style="font-weight: 900;">application SoftPOS</code>, 
+                visant à transformer une <code style="font-weight: 900;">tablette Windows IoT en terminal de paiement</code> 
+                sans contact, en exploitant la lecture des cartes via <code style="font-weight: 900;">NFC</code>.
+            </p>
+
+            <p>
+                L’application a été développée en <code style="font-weight: 900;">React Native</code> pour la partie 
+                interface utilisateur, afin de garantir une <code style="font-weight: 900;">compatibilité multiplateforme</code> 
+                tout en assurant une bonne réactivité sur tablette. Étant donné les contraintes 
+                liées à l’environnement Windows IoT, une partie du code a dû être écrite en 
+                <code style="font-weight: 900;">C++/WinRT</code> pour <code style="font-weight: 900;">interagir directement avec les composants matériels de la tablette</code>, 
+                notamment le <code style="font-weight: 900;">lecteur NFC</code>. J’ai ainsi travaillé sur la <code style="font-weight: 900;">communication entre React 
+                Native et les modules natifs en C++</code>, afin de permettre la lecture fiable des puces EMV sans contact.
+            </p>
+
+            <p>
+                J’ai également mis en place une <code style="font-weight: 900;">gestion des erreurs robuste</code>, 
+                permettant de <code style="font-weight: 900;">signaler visuellement les différents états de l’application</code> 
+                à l’utilisateur, notamment en cas de <code style="font-weight: 900;">lecture incorrecte ou d’erreur système</code>. 
+                Le retour utilisateur était une priorité, avec l’affichage d’informations 
+                contextuelles et des <code style="font-weight: 900;">codes couleurs permettant une compréhension rapide de la situation</code>. 
+                Le projet impliquait une rigueur particulière sur la <code style="font-weight: 900;">sécurité et la fiabilité</code>, étant donné 
+                qu’il s’agissait d’un prototype manipulant des <code style="font-weight: 900;">données sensibles</code> liées aux moyens de paiement.
+            </p>
+          
+        </section>
+        
+        
+
+        <section class="service">
+
+          <h4 class="h4 service-title">Technologies utilisées :</h3>
+
+          <ul class="service-list-technologies">
+
+            <li class="service-item">
+              <div class="service-icon-box" title="React Native">
+                <img src="../assets/images/technologies/reactjs-icon.svg" alt="React Native icon" width="40">
+              </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="JS">
+                  <img src="../assets/images/technologies/javascript-icon.svg" alt="JS icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box" title="C++">
+                <img src="../assets/images/technologies/cpp-icon.svg" alt="C++ icon" width="40">
+              </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Visual Studio">
+                  <img src="../assets/images/technologies/visual_studio-icon.svg" alt="Visual Studio icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Visual Studio Code">
+                  <img src="../assets/images/technologies/visualstudio_code-icon.svg" alt="Visual Studio Code icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Git">
+                  <img src="../assets/images/technologies/git-icon.svg" alt="Git icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Github">
+                  <img src="../assets/images/technologies/github-icon.svg" alt="Github icon" width="40">
+                </div>
+            </li>
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/carousel.js"></script>
+  
+
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

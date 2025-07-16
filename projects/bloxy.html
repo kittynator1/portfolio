@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/carousel.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.png" alt="Kittynator" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kittynator">Kittynator</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="" class="contact-link">Champion Régional<br>WorldSkills</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">22 Décembre 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <a href="../index.html">
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active">Back</button>
+          </li>
+
+        </ul>
+
+      </nav>
+    </a>
+    
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="ransomware  active" data-page="ransomware">
+
+        <header>
+          <h2 class="h2 article-title">Bloxy : Bot Discord – Projet personnel</h2>
+        </header>
+        
+        <section class="about-text">
+
+            <section>
+                <!-- <span id="txt">Carousel by Ashirbad Panigrahi</span> -->
+                <div class="carousel" data-carousel>
+                  <button class="carousel-button" data-carousel-btn="prev">
+                    &#10094;
+                  </button>
+                  <button class="carousel-button" data-carousel-btn="next">
+                    &#10095;
+                  </button>
+                  <ul data-carousel-slides>
+    
+                    <li class="slide" data-carousel-slide data-active>
+                      <img
+                        src="../assets/images/bloxy/invite.png"
+                        alt="image-1"
+                      />
+                    </li>
+    
+                    <li class="slide" data-carousel-slide>
+                      <img
+                        src="../assets/images/bloxy/menu.png"
+                        alt="image-2"
+                      />
+                    </li>
+
+    
+                  </ul>
+                  <ul data-carousel-dots>
+                    <li data-carousel-dot data-active></li>
+                    <li data-carousel-dot></li>
+                  </ul>
+                </div>
+            </section>
+            
+    
+            <header>
+                <h2 class="h2 article-title"></h2>
+            </header>
+            
+
+            <p>
+                En 2019 - 2020, j’ai développé Bloxy, un bot Discord codé avec <code style="font-weight: 900;">discord.js v11</code>. 
+                Il s’agissait de mon tout premier véritable projet 
+                personnel, et c’est à travers lui que j’ai découvert et appris le <code style="font-weight: 900;">JavaScript</code>. 
+                Pour monter en compétences, j’ai suivi un cours sur <code style="font-weight: 900;">OpenClassrooms</code> qui m’a permis d’assimiler les bases du langage, 
+                un cours aujourd’hui archivé, mais qui a été fondamental dans mon apprentissage  
+            </p>
+
+            <p>
+                Bloxy proposait un système d’auto-modération <code style="font-weight: 900;">(anti-insultes, anti-spam, etc.)</code> 
+                ainsi que des commandes fun pour animer les serveurs. Mon objectif était d’aller jusqu’à 
+                l’obtention du <code style="font-weight: 900;">badge Développeur Certifié</code> (aujourd’hui renommé 
+                <code style="font-weight: 900;">Développeur Certifié de la Première Heure</code>), 
+                une reconnaissance officielle décernée aux créateurs de bots vérifiés. Cependant, à partir du 19 août 2020, 
+                ce badge a été rendu inobtenable à cause d’abus répétés de certains utilisateurs. Cette décision m’a amené à 
+                annoncer l’arrêt progressif de mon projet, alors que mon <code style="font-weight: 900;">objectif était presque atteint.</code> Malgré cela, 
+                Bloxy reste une étape marquante de mon parcours, celle qui m’a véritablement lancé dans le <code style="font-weight: 900;">développement logiciel</code>.
+            </p>
+          
+        </section>
+        
+        
+
+        <section class="service">
+
+          <h4 class="h4 service-title">Technologies utilisées :</h3>
+
+          <ul class="service-list-technologies">
+
+            <li class="service-item">
+                <div class="service-icon-box" title="JavaScript">
+                  <img src="../assets/images/technologies/javascript-icon.svg" alt="JavaScript icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Node JS">
+                  <img src="../assets/images/technologies/nodejs-icon.svg" alt="Node JS icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box" title="Discord JS">
+                <img src="../assets/images/technologies/js_discord-icon.svg" alt="Discord JS icon" width="40">
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box" title="Visual Studio Code">
+                <img src="../assets/images/technologies/visualstudio_code-icon.svg" alt="Visual Studio Code icon" width="40">
+              </div>
+            </li>
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/carousel.js"></script>
+  
+
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

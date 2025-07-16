@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/carousel.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.png" alt="Kittynator" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kittynator">Kittynator</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="" class="contact-link">Champion Régional<br>WorldSkills</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">22 Décembre 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <a href="../index.html">
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active">Back</button>
+          </li>
+
+        </ul>
+
+      </nav>
+    </a>
+    
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="nolark  active" data-page="nolark">
+
+        <header>
+          <h2 class="h2 article-title">Nolark – Projet scolaire</h2>
+        </header>
+        
+        <section class="about-text">
+
+            <section>
+                <!-- <span id="txt">Carousel by Ashirbad Panigrahi</span> -->
+                <div class="carousel" data-carousel>
+                  <button class="carousel-button" data-carousel-btn="prev">
+                    &#10094;
+                  </button>
+                  <button class="carousel-button" data-carousel-btn="next">
+                    &#10095;
+                  </button>
+                  <ul data-carousel-slides>
+    
+                    <li class="slide" data-carousel-slide data-active>
+                      <img
+                        src="../assets/images/nolark/nolark-1.png"
+                        alt="image-1"
+                      />
+    
+                    </li>
+    
+                    <li class="slide" data-carousel-slide>
+                      <img
+                      src="../assets/images/nolark/nolark-2.png"
+                        alt="image-2"
+                      />
+                    </li>
+
+                    <li class="slide" data-carousel-slide>
+                        <img
+                        src="../assets/images/nolark/nolark-3.png"
+                          alt="image-2"
+                        />
+                    </li>
+
+                    <li class="slide" data-carousel-slide>
+                        <img
+                        src="../assets/images/nolark/nolark-4.png"
+                          alt="image-2"
+                        />
+                    </li>
+    
+                  </ul>
+                  <ul data-carousel-dots>
+                    <li data-carousel-dot data-active></li>
+                    <li data-carousel-dot></li>
+                    <li data-carousel-dot></li>
+                    <li data-carousel-dot></li>
+                  </ul>
+                </div>
+            </section>
+            
+    
+            <header>
+                <h2 class="h2 article-title"></h2>
+            </header>
+            
+
+            <p>
+                Dans le cadre de ma <code style="font-weight: 900;">première année de BTS SIO</code>, 
+                j’ai réalisé un <code style="font-weight: 900;">site vitrine</code> fictif pour <code style="font-weight: 900;">Nolark</code>, 
+                une entreprise spécialisée dans la vente de casques de moto. 
+                Ce projet avait pour but de me familiariser avec les <code style="font-weight: 900;">fondamentaux du développement web</code>.
+            </p>
+
+            <p>
+                Le site présente plusieurs pages statiques avec une mise en page <code style="font-weight: 900;">responsive</code>, 
+                un design <code style="font-weight: 900;">simple et efficace</code>, et des interactions basiques en <code style="font-weight: 900;">JavaScript</code>.
+                J’ai appris à structurer une page HTML de manière <code style="font-weight: 900;">sémantique</code>, 
+                à styliser une interface utilisateur avec <code style="font-weight: 900;">CSS</code>, et à ajouter une première couche 
+                d’interactivité avec <code style="font-weight: 900;">JavaScript</code>.
+            </p>
+          
+        </section>
+        
+        
+
+        <section class="service">
+
+          <h4 class="h4 service-title">Technologies utilisées :</h3>
+
+          <ul class="service-list-technologies">
+
+            <li class="service-item">
+              <div class="service-icon-box" title="HTML">
+                <img src="../assets/images/technologies/html-icon.svg" alt="HTML icon" width="40">
+              </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="CSS">
+                  <img src="../assets/images/technologies/css-icon.svg" alt="CSS icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box" title="JS">
+                <img src="../assets/images/technologies/javascript-icon.svg" alt="JS icon" width="40">
+              </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Git">
+                  <img src="../assets/images/technologies/git-icon.svg" alt="Git icon" width="40">
+                </div>
+            </li>
+
+            <li class="service-item">
+                <div class="service-icon-box" title="Github">
+                    <img src="../assets/images/technologies/github-icon.svg" alt="Github icon" width="40">
+                </div>
+            </li>
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/carousel.js"></script>
+  
+
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
